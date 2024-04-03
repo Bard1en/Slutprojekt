@@ -44,3 +44,8 @@ li{
 .startsida{
     font-size: 55px;
 }
+video{
+    width:100%;
+    height:350px;
+    border-style:none;
+}
