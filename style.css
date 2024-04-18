@@ -178,7 +178,7 @@ header li a:hover{
     height:auto;
 }
 strong{
-    font-size:24px;
+    font-size:1.5em;
 }
 .knappformular{
     display: flex;
@@ -196,7 +196,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #ffffff;
+    border: 1px solid white;
     text-align: left;
     padding: 8px;
 }
@@ -214,4 +214,22 @@ audio{
 }
 td audio{
     float:right;
+}
+img:link{
+    inherits:auto; 
+}
+img:visited{
+    inherits:auto;
+}
+img:focus{
+    inherits:auto;
+}
+img:hover{
+    inherits:auto;
+}
+img:active{
+    inherits:auto;
+}
+.tacksida{
+    font-size:50px;
 }

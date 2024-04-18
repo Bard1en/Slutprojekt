@@ -33,11 +33,31 @@
             </ul>
         </nav>
       <main> 
-        <form>
-            <label for="namn">Namn:</label>
-            <input type="text" id="namn" name="namn">
-            <label for="ålder">Ålder:</label>
-            <input type="text" id="ålder" name="ålder">
+        <form action="tacksida.html" method="post"> 
+            <fieldset>
+                <legend>Musiktest</legend>
+                  <label for="namn">Namn:</label>
+                  <input type="text" id="namn" name="namn">
+                  <label for="password">Lösenord:</label>
+                  <input type="password" id="password" name="password">
+            </fieldset>
+            <fieldset>
+                <p>Vilken genre är äldst?</p>
+                <input type="radio" id="Jazz" name="genre" value="Jazz">
+                <label for="Jazz">Jazz</label>
+                <input type="radio" id="Rock" name="genre" value="Rock">
+                <label for="Rock">Rock</label>
+                <input type="radio" id="Klassisk" name="genre" value="klassisk">
+                <label for="klassisk">Klassisk</label>
+                <p>Vilken av följande musikgenrer är mest känd för sina improvisation?</p>
+                <input type="checkbox" id="Jazz" name="genre1" value="Jazz">
+                <label for="Jazz">Jazz</label>
+                <input type="checkbox" id="rap" name="genre2" value="rap">
+                <label for="rap">Rap</label>
+                <input type="checkbox" id="pop" name="genre3" value="pop">
+                <label for="pop">Pop</label>
+                <input type="submit" value="submit">
+            </fieldset>
         </form>
       </main>
      <footer>
