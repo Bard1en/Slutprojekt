@@ -146,7 +146,7 @@ header li a:hover{
     border-radius:5%;
 }
 #instrument main a img:hover{
-    transform:scale(1.01);
+    opacity:95%;
     transition: 500ms;
 }
 .genrespalt{
@@ -189,4 +189,29 @@ strong{
 }
 .knappformular:hover{
     background-color:rgba(239, 239, 240, 1);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #d6d6d6;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.70);
+    color: white;
+}
+audio{
+    height: 45px;
+}
+td audio{
+    float:right;
 }
