@@ -41,10 +41,7 @@ body{
 footer{
     grid-area:footer;
     left:0;
-    /*bottom:0;*/
     width:100%;
-    /*position:fixed;
-    height: 80px;*/
     background-color:rgba(0, 0, 0, 1);
     opacity: 85%;
 }
@@ -107,7 +104,7 @@ li{
 }
 
 img{
-    width:99%;
+    width:100%;
     border-style:none;
 }
 main p{
@@ -156,6 +153,7 @@ header li a:hover{
     display:grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows:250px 250px 250px 250px 250px;
+    grid-row-gap: 40px;
 }
 .genrespalt section p{
     font-family:"cairo"; 
@@ -176,6 +174,19 @@ header li a:hover{
 }
 .genrespalt section img{
     width:24%;
-    height:194px;
     border-radius:5%;
+    height:auto;
+}
+strong{
+    font-size:24px;
+}
+.knappformular{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border:1px solid rgba(0, 0, 0, 1);
+    border-radius:20px;
+}
+.knappformular:hover{
+    background-color:rgba(239, 239, 240, 1);
 }
