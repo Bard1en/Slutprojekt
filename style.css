@@ -1,11 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Cairo');
+@import url('https://fonts.googleapis.com/css?family=Cairo');/*Importerar font från internet*/
 
-body{
-    margin:0;
-    height:100vh;
+body{ 
+    margin:0;/*Sätter så att det inte finns några margins på kanterna*/
+    height:100vh;/*Sätter höjden på sidan till 100 vertical heights*/
+    font-family: "Cairo",monospace;/*Skapar många olika fonter till sidan som checkar om användaren har i ordning*/
 }
 
 .wrapper{
+    display:grid;/*Visar gridden som bestämmst under*/
+    width:100%;/*Sätter så att wrapperna har en bredd på 100%*/
+    height:100%;/*Sätter så att wrapperna har en höjd på 100%*/
+    margin: 0 auto; 
+    grid-template-rows: 100px 100px auto 80px; /*skapar 4 st rader för gridden med olika storlekar*/
+    grid-template-areas: /*anger områden i grid layout*/
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+#instrument .wrapper{ /*Specifikt idn instrument */
     display:grid;
     width:100%;
     height:100%;
@@ -17,38 +30,27 @@ body{
     "main"
     "footer";
 }
-#instrument .wrapper{
-    display:grid;
-    width:100%;
-    height:100%;
-    margin: 0 auto;
-    grid-template-rows: 100px 100px auto 80px;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "footer";
+#instrument li{ /*list elementet i idn instrument*/
+    font-size:22px; /*ändrar text storleken*/
 }
-
-.titelnav > ol{
+.titelnav > ol{ /*ändrar länkar under titlenav*/
     grid-template-columns: 1fr;
     display:grid;
 }
-.spaltstartsida{
+.spaltstartsida{ /*klassen spaltstartsida får dessa stilar*/
     grid-template-columns:1fr 1fr;
     display:grid;
 }
-footer{
-    grid-area:footer;
-    left:0;
+footer{ 
+    grid-area:footer; /*Sätter så den för grid layout som bestämmdes i wrappen*/
     width:100%;
-    background-color:rgba(0, 0, 0, 1);
-    opacity: 85%;
+    background-color:rgba(0, 0, 0, 1);/*Ändrar backgrundsfärgen till svart*/
+    opacity: 85%; /*Gör så att färgen är lite genomskinlig*/
 }
 
-footer p{
+footer p{ /*p i footer får dessa egenskaper*/
     color:rgb(130, 130, 130);
-    text-align:center;
+    text-align:center;/*Centrerar texten*/
     font-size:22px;
 }
 header{
@@ -56,39 +58,38 @@ header{
     text-align:center;
 }
 
-h1{
-    display:none;
+h1{ 
+    display:none;/*Gör så att h1 inte visas*/
 }
 h2,h3{
     font-family: "cairo";
     font-size:30px;
-    padding-top:10px;
+    padding-top:10px;/*Skapar en 10 px padding ovanifrån*/
     margin:0;
-    padding-left:30px;
+    padding-left:30px;/*skapar padding till vänster*/
 }
 nav{
     grid-area:nav;
 }
-nav li{
+nav li{/*li i nav ändras*/
     display:grid;
-    justify-content: stretch;
+    justify-content: stretch;/*Stretchar ut li*/
 }
 
 header li{
     display :grid;
 }
-nav > ul  {
+nav > ul  { /*ändrar länkar under nav*/
     display:grid;
     text-align:center;
     grid-template-columns: 1fr 1fr 1fr;
-    list-style-type: none;
+    list-style-type: none;/*tar bort punkter eller annat innan listan*/
     padding-left:0;
 }
 a{
-    font-family: "cairo";
-    text-decoration:none;
+    text-decoration:none; /*Gör så att texten inte har någon dekoration, ingen understrucket eller fetstil*/
     color:rgba(0, 0, 0, 1);
-    letter-spacing: 1px;
+    letter-spacing: 1px; /*Gör så att bokstäver har 1 px mellan varandra*/
     font-size:35px;
 }
 ol{
@@ -117,11 +118,11 @@ main p{
 
 }
 
-nav li a:hover{
+nav li a:hover{/*När man håller över a i li i nav */
     font-size:40px;
-    font-weight: 1000;
+    font-weight: 1000;/*Gör så att texten får fetstil*/
     background-color:#f5f5f5;
-    transition: 500ms;
+    transition: 500ms;/*Gör så att det tar lite tid innan stilarna man valt ändras*/
 }
 
 header li a:hover{
@@ -134,26 +135,33 @@ header li a:hover{
     font-size:55px;
 }
 #instrument main{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display:flex;/*Skapar en flex grid*/
+    flex-direction: row;/*Gör så att flex gridden är i rad form*/
+    flex-wrap: wrap;/*Gör så att flex gridden wrappar runt allt i main*/
 }
 
 #instrument main section{
-    width: calc(100%/3);
+    width: calc(100%/3);/*Räknar ut vad 100/3 blir med calc*/
 }
 #instrument main a img{
-    border-radius:5%;
+    border-radius:5%;/*Gör så att border får runda kanter*/
 }
 #instrument main a img:hover{
     opacity:95%;
     transition: 500ms;
 }
+#instrument h2{
+    text-align:center;
+    padding:0px;
+}
+#instrument section{
+    height:300px;
+}
 .genrespalt{
     display:grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows:250px 250px 250px 250px 250px;
-    grid-row-gap: 40px;
+    grid-row-gap: 40px;/*Gör så att det är 40px mellan grid raderna*/
 }
 .genrespalt section p{
     font-family:"cairo"; 
@@ -178,12 +186,12 @@ header li a:hover{
     height:auto;
 }
 strong{
-    font-size:1.5em;
+    font-size:1.5em; /*Gör så att texten får en storlek på 1.5 em vilket är 1.5 större än den vanliga text storlekn i dokumentet*/
 }
 .knappformular{
     display: flex;
-    justify-content: center;
-    align-items:center;
+    justify-content: center;/*Centerar allt i flex*/
+    align-items:center; /*Centerar*/
     border:1px solid rgba(0, 0, 0, 1);
     border-radius:20px;
 }
@@ -191,12 +199,12 @@ strong{
     background-color:rgba(239, 239, 240, 1);
 }
 table {
-    border-collapse: collapse;
+    border-collapse: collapse;/*Gör så att det inte finns några mellanrum mellan bordersna i tabellen*/
     width: 100%;
 }
 
 th, td {
-    border: 1px solid white;
+    border: 1px solid white; /*skapar en border runt tabell data och tabell header*/
     text-align: left;
     padding: 8px;
 }
@@ -213,22 +221,22 @@ audio{
     height: 45px;
 }
 td audio{
-    float:right;
+    float:right; /*Gör så att det flyttas till höger, testade med annat men detta var det endas som funkade med audio*/
 }
-img:link{
-    inherits:auto; 
+li:link{ /*Hur li ser ut innan den har varit besökt*/
+    font-size:1em;
 }
-img:visited{
-    inherits:auto;
+li:visited{ /*Hur li ser ut efter den varit besökt*/
+    font-size:1em;
 }
-img:focus{
-    inherits:auto;
+li:focus{/*När man trycker eller håller över den med tangentbordet*/
+    font-size:1em;
 }
-img:hover{
-    inherits:auto;
+li:hover{ /*När man håller över li med musen*/
+    font-size:1em;
 }
-img:active{
-    inherits:auto;
+li:active{/*När man trycker ner mus knappen*/
+    font-size:1em;
 }
 .tacksida{
     font-size:50px;

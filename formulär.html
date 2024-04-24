@@ -33,30 +33,32 @@
             </ul>
         </nav>
       <main> 
-        <form action="tacksida.html" method="post"> 
-            <fieldset>
-                <legend>Musiktest</legend>
-                  <label for="namn">Namn:</label>
-                  <input type="text" id="namn" name="namn">
-                  <label for="password">Lösenord:</label>
-                  <input type="password" id="password" name="password">
+        <form action="tacksida.html" method="post"> <!--formulär som skickar till sidan "tacksida.html" med metoden post-->
+            <fieldset><!--Gör så att det skapas en typ av "border" runt det som den har inuti-->
+                <legend>Musiktest</legend> <!--Som en typ av rubrik fast den byrter fieldset border-->
+                  <label for="namn">Namn:</label> <!--Skapar en label som man sedan väljer vad som ska stå-->
+                  <input type="text" id="namn" name="namn"><!--Ett text in matningsfält-->
+                  <label for="password">Lösenord:</label><!--Label för lösenord-->
+                  <input type="password" id="password" name="password"><!--Ett löseords inmatnignsfält som döljer bokstäver och siffror-->
             </fieldset>
             <fieldset>
                 <p>Vilken genre är äldst?</p>
-                <input type="radio" id="jazz" name="genre" value="jazz">
+                <input type="radio" id="jazz" name="genre" value="jazz"><!--input fast med radioknapp-->
                 <label for="jazz">Jazz</label>
                 <input type="radio" id="Rock" name="genre" value="Rock">
                 <label for="Rock">Rock</label>
                 <input type="radio" id="klassisk" name="genre" value="klassisk">
                 <label for="klassisk">Klassisk</label>
                 <p>Vilken av följande musikgenrer är mest känd för sina improvisation?</p>
-                <input type="checkbox" id="Jazz" name="genre1" value="Jazz">
+                <input type="checkbox" id="Jazz" name="genre1" value="Jazz"><!--input fast med checkbox-->
                 <label for="Jazz">Jazz</label>
                 <input type="checkbox" id="rap" name="genre2" value="rap">
                 <label for="rap">Rap</label>
                 <input type="checkbox" id="pop" name="genre3" value="pop">
                 <label for="pop">Pop</label>
-                <input type="submit" value="submit">
+                <p><label for="extra">Något du vill tillägga:</label></p>
+                <textarea id="extra" name="extra" rows="4" cols="50"></textarea><!--input fast med textfält där du kan skriva längre texter-->
+                <input type="submit" value="submit"><!--Submit knapp som skickar svaret till sidan man länkade i början av formuläret-->
             </fieldset>
         </form>
       </main>
