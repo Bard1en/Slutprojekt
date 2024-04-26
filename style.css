@@ -49,7 +49,7 @@ footer{
 }
 
 footer p{ /*p i footer får dessa egenskaper*/
-    color:rgb(130, 130, 130);
+    color:white;
     text-align:center;/*Centrerar texten*/
     font-size:22px;
 }
@@ -96,17 +96,19 @@ ol{
     list-style-type:none;
     padding-left:0px;
 }
+figure{
+    margin:0;
+}
 li{
     list-style-type:none;
 }
-
 .startsida{
     font-size: 55px;
 }
-
 img{
     width:100%;
     border-style:none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /*Skapar en skugga runt elementet man stylar*/ 
 }
 main p{
     font-family:"cairo"; 
@@ -115,14 +117,15 @@ main p{
     color:rgba(0, 0, 0, 1);
     letter-spacing: 1px;
     margin:0;
-
 }
 
 nav li a:hover{/*När man håller över a i li i nav */
     font-size:40px;
     font-weight: 1000;/*Gör så att texten får fetstil*/
-    background-color:#f5f5f5;
+    background-color:hsl(0,0%, 96.08%);
     transition: 500ms;/*Gör så att det tar lite tid innan stilarna man valt ändras*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    border-radius:6px;
 }
 
 header li a:hover{
@@ -130,6 +133,8 @@ header li a:hover{
     font-weight:1000;
     background-color: #f5f5f5;
     transition: 500ms;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    border-radius:6px;
 }
 #instrument header li a{
     font-size:55px;
@@ -145,17 +150,19 @@ header li a:hover{
 }
 #instrument main a img{
     border-radius:5%;/*Gör så att border får runda kanter*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
 }
 #instrument main a img:hover{
     opacity:95%;
     transition: 500ms;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
 }
 #instrument h2{
     text-align:center;
     padding:0px;
 }
 #instrument section{
-    height:300px;
+    height:auto;
 }
 .genrespalt{
     display:grid;
@@ -184,6 +191,7 @@ header li a:hover{
     width:24%;
     border-radius:5%;
     height:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
 }
 strong{
     font-size:1.5em; /*Gör så att texten får en storlek på 1.5 em vilket är 1.5 större än den vanliga text storlekn i dokumentet*/
@@ -193,32 +201,66 @@ strong{
     justify-content: center;/*Centerar allt i flex*/
     align-items:center; /*Centerar*/
     border:1px solid rgba(0, 0, 0, 1);
-    border-radius:20px;
+    border-radius:20px; 
 }
 .knappformular:hover{
     background-color:rgba(239, 239, 240, 1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+input[type=text],
+input[type=password],
+input[type=checkbox],
+input[type=radio],
+input[type=textbox], select{ 
+    width:80%;
+    padding:4px 10px;
+    margin:8px 0;
+    border: 1px solid #cccccc;
+    border-radius:6px;
+}
+input[type=submit]{
+    width:100%;
+    background-color:#4CAF50;
+    color:white;
+    padding:14px 20px;
+    margin:8px 0;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer; /*Gör så att muspekaren blir till pekare*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+fieldset{
+    border-radius:6px;
+    width:80%;
+    display:block;/*Gör så att fieldset visas som ett block*/
+    margin:0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+input[type=submit]:hover{
+    background-color:#45a049;
 }
 table {
     border-collapse: collapse;/*Gör så att det inte finns några mellanrum mellan bordersna i tabellen*/
-    width: 100%;
+    width: 90vw;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
 }
-
 th, td {
     border: 1px solid white; /*skapar en border runt tabell data och tabell header*/
     text-align: left;
     padding: 8px;
 }
-
 tr:nth-child(even) {
     background-color: #d6d6d6;
 }
-
 th {
     background-color: rgba(0, 0, 0, 0.70);
     color: white;
 }
 audio{
     height: 45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    border-radius:25px;
 }
 td audio{
     float:right; /*Gör så att det flyttas till höger, testade med annat men detta var det endas som funkade med audio*/
