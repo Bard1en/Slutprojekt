@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cairo');/*Importerar font från internet*/
-
 body{ 
     margin:0;/*Sätter så att det inte finns några margins på kanterna*/
     height:100vh;/*Sätter höjden på sidan till 100 vertical heights*/
     font-family: "Cairo",monospace;/*Skapar många olika fonter till sidan som checkar om användaren har i ordning*/
 }
-
 .wrapper{
     display:grid;/*Visar gridden som bestämmst under*/
     width:100%;/*Sätter så att wrapperna har en bredd på 100%*/
@@ -47,7 +45,6 @@ footer{
     background-color:rgba(0, 0, 0, 1);/*Ändrar backgrundsfärgen till svart*/
     opacity: 85%; /*Gör så att färgen är lite genomskinlig*/
 }
-
 footer p{ /*p i footer får dessa egenskaper*/
     color:white;
     text-align:center;/*Centrerar texten*/
@@ -57,7 +54,6 @@ header{
     grid-area:header;
     text-align:center;
 }
-
 h1{ 
     display:none;/*Gör så att h1 inte visas*/
 }
@@ -75,7 +71,6 @@ nav li{/*li i nav ändras*/
     display:grid;
     justify-content: stretch;/*Stretchar ut li*/
 }
-
 header li{
     display :grid;
 }
@@ -118,7 +113,6 @@ main p{
     letter-spacing: 1px;
     margin:0;
 }
-
 nav li a:hover{/*När man håller över a i li i nav */
     font-size:40px;
     font-weight: 1000;/*Gör så att texten får fetstil*/
@@ -127,7 +121,6 @@ nav li a:hover{/*När man håller över a i li i nav */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
     border-radius:6px;
 }
-
 header li a:hover{
     font-size:60px;
     font-weight:1000;
@@ -144,7 +137,6 @@ header li a:hover{
     flex-direction: row;/*Gör så att flex gridden är i rad form*/
     flex-wrap: wrap;/*Gör så att flex gridden wrappar runt allt i main*/
 }
-
 #instrument main section{
     width: calc(100%/3);/*Räknar ut vad 100/3 blir med calc*/
 }
@@ -248,7 +240,7 @@ table {
 th, td {
     border: 1px solid white; /*skapar en border runt tabell data och tabell header*/
     text-align: left;
-    padding: 8px;
+    padding: 7.8px;
 }
 tr:nth-child(even) {
     background-color: #d6d6d6;

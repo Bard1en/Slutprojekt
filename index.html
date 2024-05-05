@@ -1,6 +1,6 @@
-<!DOCTYPE html><!--Bestämmer så att dokument typen är HTML-->
-<html lang="sv"> <!--Anger språket för webbsidan-->
-<head>
+<!DOCTYPE html><!--Bestämmer så att kodspråket är HTML-->
+<html lang="sv"> <!--Anger språket för webbsidan och skapar själva sidan-->
+<head><!--Tekniska delarna av hemsidan som inte syns-->
     <meta charset="UTF-8"><!--Ställer in teckenkodningen till UTF-8-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Gör så att den kan kontrollera användarens skärm storlek-->
     <link rel="stylesheet" href="style.css"><!--Länkar till en extern css-fil-->
@@ -10,7 +10,7 @@
 <body>
     <div class="wrapper"><!--En div som täcker hela sidan och som sedan har en klass för att kunna skapa en grid-->
         <header> <!--Huvudsektionen på sidan-->
-            <h1>.</h1><!--Rubriken på hemsidan, valt att inte visa då jag använder en länk till startsidan som rubrik-->
+            <h1>0</h1><!--Rubriken på hemsidan, valt att inte visa då jag använder en länk till startsidan som rubrik-->
             <nav class="titelnav"><!--Navigation med speciell klass för att kunna ändra just dessa länkar-->
                 <ol><!--Ordnad lista-->
                     <li> <!--Lista-->
@@ -33,13 +33,13 @@
             </ul>
         </nav>
         <main> <!--Huvuddelen av sidan-->
-            <article>
-                <figure>
+            <article><!--Som en section fast endast för bilder-->
+                <figure><!--grupperar bilderna som man sedan kan lägga till en figcaption för att ge bilden en caption -->
                     <img src="bilder/banner.jpeg" alt="banner"><!--bild som används som banner-->
                 </figure>
             </article>
              <div class="spaltstartsida"><!--En container för att kunna skapa en grid inuti en annan grid och göra en 2 spalts layout-->
-               <section><!--En av sektionerna i gridden-->
+               <section><!--En av sektionerna i gridden  som används för att dela upp sidan-->
                 <h2>
                     Välkommen
                 </h2>

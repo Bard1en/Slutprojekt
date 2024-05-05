@@ -10,7 +10,7 @@
 <body>
     <div class="wrapper">
         <header> 
-            <h1>.</h1>
+            <h1>0</h1>
             <nav class="titelnav">
                 <ol>
                     <li>
@@ -34,11 +34,14 @@
         </nav>
       <main> 
         <table><!--Skapar en tabell-->
+         <thead><!--delar in tabell så att man vet vad som är lägnst upp-->
             <tr><!--skapar en tabellrad-->
                 <th scope="col">Plats</th> <!--skapar en rubrik för Plats-->
                 <th scope="col">Artist och titel</th><!--skapar en rubrik för Artist och titel-->
                 <th scope="col">Lyssningar</th><!--skapar en rubrik för Lyssningar-->
             </tr>
+         </thead>
+         <tbody><!-- Indelning av all tabell data-->
             <tr>
                 <td>1</td><!--Skapar en tabell data cell-->
                 <td>The Weeknd - Blinding Lights  <audio controls> <source src="Låtar/Blindinglights.mp3" type="audio/mp3"></audio></td><!--skapar en tabell data cell med ljud också-->
@@ -89,6 +92,7 @@
                 <td>Imagine Dragons - Believer  <audio controls><source src="Låtar/believer.mp3" type="audio/mp3"></audio></td>
                 <td>2,932,018,287</td>
             </tr>
+         </tbody>
         </table>
       </main>
      <footer>
