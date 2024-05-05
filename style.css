@@ -58,7 +58,7 @@ h1{
     display:none;/*Gör så att h1 inte visas*/
 }
 h2,h3{
-    font-family: "cairo";
+    font-family: "cairo", monospace;
     font-size:30px;
     padding-top:10px;/*Skapar en 10 px padding ovanifrån*/
     margin:0;
@@ -106,7 +106,7 @@ img{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /*Skapar en skugga runt elementet man stylar*/ 
 }
 main p{
-    font-family:"cairo"; 
+    font-family:"cairo", monospace; 
     font-size:22px;
     padding-left:30px;
     color:rgba(0, 0, 0, 1);
@@ -163,7 +163,7 @@ header li a:hover{
     grid-row-gap: 40px;/*Gör så att det är 40px mellan grid raderna*/
 }
 .genrespalt section p{
-    font-family:"cairo"; 
+    font-family:"cairo", monospace; 
     font-size:22px;
     padding-left:30px;
     color:rgba(0, 0, 0, 1);
