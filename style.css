@@ -257,6 +257,9 @@ audio{
 td audio{
     float:right; /*Gör så att det flyttas till höger, testade med annat men detta var det endas som funkade med audio*/
 }
+.tacksida{
+    font-size:50px;
+}
 li:link{ /*Hur li ser ut innan den har varit besökt*/
     font-size:1em;
 }
@@ -271,7 +274,4 @@ li:hover{ /*När man håller över li med musen*/
 }
 li:active{/*När man trycker ner mus knappen*/
     font-size:1em;
-}
-.tacksida{
-    font-size:50px;
 }
