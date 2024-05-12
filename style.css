@@ -31,7 +31,7 @@ body{
 #instrument li{ /*list elementet i idn instrument*/
     font-size:22px; /*ändrar text storleken*/
 }
-.titelnav > ol{ /*ändrar länkar under titlenav*/
+nav > ol{ /*ändrar länkar under nav*/
     grid-template-columns: 1fr;
     display:grid;
 }
@@ -224,7 +224,7 @@ input[type=submit]{
 fieldset{
     border-radius:6px;
     width:80%;
-    display:block;/*Gör så att fieldset visas som ett block*/
+    display:block;/*Gör så att fieldset visas som ett block och var det enda sättet för mig att göra så att det kunde centreras snabbt och lätt*/
     margin:0 auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
 }
@@ -255,23 +255,23 @@ audio{
     border-radius:25px;
 }
 td audio{
-    float:right; /*Gör så att det flyttas till höger, testade med annat men detta var det endas som funkade med audio*/
+    float:right; /*Gör så att det flyttas till höger, testade med annat men detta var det endas som funkade med audio och sökte även upp sätt man kunde göra det på och detta verkade smidigast*/
 }
 .tacksida{
     font-size:50px;
 }
-li:link{ /*Hur li ser ut innan den har varit besökt*/
+.tacksida:link{ /*Hur li ser ut innan den har varit besökt*/
     font-size:1em;
 }
-li:visited{ /*Hur li ser ut efter den varit besökt*/
+.tacksida:visited{ /*Hur li ser ut efter den varit besökt*/
     font-size:1em;
 }
-li:focus{/*När man trycker eller håller över den med tangentbordet*/
+.tacksida:focus{/*När man trycker eller håller över den med tangentbordet*/
     font-size:1em;
 }
-li:hover{ /*När man håller över li med musen*/
+.tacksida:hover{ /*När man håller över li med musen*/
     font-size:1em;
-}
-li:active{/*När man trycker ner mus knappen*/
+} 
+.tacksida:active{/*När man trycker ner mus knappen*/
     font-size:1em;
 }
