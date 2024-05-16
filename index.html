@@ -9,21 +9,19 @@
 </head>
 <body>
     <div class="wrapper"><!--En div som täcker hela sidan och som sedan har en klass för att kunna skapa en grid-->
+        
         <header> <!--Huvudsektionen på sidan-->
-             <nav><!--Navigation med speciell klass för att kunna ändra just dessa länkar-->
-                <ol><!--Ordnad lista-->
-                    <li><a class ="startsida" href="index.html">Musik</a></li> <!--Länk till startsida--><!--Lista-->
-                </ol>
-             </nav> 
-            <h1>0</h1><!--Rubriken på hemsidan, valt att inte visa då jag använder en länk till startsidan som rubrik-->
+            <nav><!--Andra navigationen utan klass som finns under-->
+                <ul><!--oordnadlista-->
+                    <li><a href="index.html">Musik</a></li>
+                    <li><a href=genre.html>Genre</a></li>
+                    <li><a href=instrument.html>Instrument</a></li>
+                    <li><a href=top10.html>Top 10</a></li>
+                </ul>
+            </nav>
+            <h1>Musik</h1>
         </header>
-        <nav><!--Andra navigationen utan klass som finns under-->
-            <ul> <!--oordnadlista-->
-                <li><a href=genre.html>Genre</a></li>
-                <li><a href=instrument.html>Instrument</a></li>
-                <li><a href=top10.html>Top 10</a></li>
-            </ul>
-        </nav>
+
         <main> <!--Huvuddelen av sidan-->
             <article><!--Som en section fast endast för bilder-->
                 <figure><!--grupperar bilderna som man sedan kan lägga till en figcaption för att ge bilden en caption -->
@@ -31,12 +29,14 @@
                 </figure>
             </article>
              <div class="spaltstartsida"><!--En container för att kunna skapa en grid inuti en annan grid och göra en 2 spalts layout-->
+
                <section><!--En av sektionerna i gridden  som används för att dela upp sidan-->
                 <h2> Välkommen </h2>
                 <p>till min musiksida! Utforska olika genrer från pop till rock. Vill du lära dig ett nytt instrument?
                    Ta en titt på våra guider. Missa inte vår Top 50-lista med de senaste trenderna och favoriterna.
                    Oavsett om du lyssnar, spelar eller skapar, är vår sida din ultimata musikupplevelse!</p>
                </section>
+
                <section>
                 <h3>Musiktest</h3>
                 <p>Testa dina musikkunskaper med mitt formulär.</p>
@@ -44,6 +44,7 @@
                </section>
              </div>
         </main>
+
      <footer><!--Sidfoten av sidan-->
       <p>Love Schill TE22A</p>
      </footer>

@@ -9,29 +9,30 @@
 </head>
 <body>
     <div class="wrapper">
+
         <header> 
-             <nav>
-                <ol>
-                    <li><a class ="startsida" href="index.html">Musik</a></li>
-                </ol>
-             </nav>
-            <h1>0</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Musik</a></li>
+                    <li><a href=genre.html>Genre</a></li>
+                    <li><a href=instrument.html>Instrument</a></li>
+                    <li><a href=top10.html>Top 10</a></li>
+                </ul>
+            </nav>
+            <h1>Formulär</h1>
         </header>
-        <nav>
-            <ul>
-                <li><a href=genre.html>Genre</a></li>
-                <li><a href=instrument.html>Instrument</a></li>
-                <li><a href=top10.html>Top 10</a></li>
-            </ul>
-        </nav>
+
       <main> 
         <form action="tacksida.html" method="post"> <!--formulär som skickar till sidan "tacksida.html" med metoden post-->
             <fieldset><!--Gör så att det skapas en typ av "border" runt det som den har inuti-->
+
                 <legend>Musiktest</legend> <!--Som en typ av rubrik fast den byrter fieldset border-->
+
                     <label for="namn">Namn:</label> <!--Skapar en label som man sedan väljer vad som ska stå-->
-                    <input type="text" id="namn" name="namn"><!--Ett text in matningsfält-->
+                    <input type="text" id="namn" name="namn"><br><!--Ett text in matningsfält och en radbrytning--> 
                     <label for="password">Lösenord:</label><!--Label för lösenord-->
                     <input type="password" id="password" name="password"><!--Ett löseords inmatnignsfält som döljer bokstäver och siffror-->
+
                         <p>Vilken genre är äldst?</p>
                     <input type="radio" id="jazz" name="genre" value="jazz"><!--input fast med radioknapp-->
                     <label for="jazz">Jazz</label>
@@ -39,6 +40,7 @@
                     <label for="Rock">Rock</label>
                     <input type="radio" id="klassisk" name="genre" value="klassisk">
                     <label for="klassisk">Klassisk</label>
+
                         <p>Vilken av följande musikgenrer är mest känd för sina improvisation?</p>
                     <input type="checkbox" id="Jazz" name="Jazz" value="Jazz"><!--input fast med checkbox-->
                     <label for="Jazz">Jazz</label>
@@ -52,6 +54,7 @@
             </fieldset>
         </form>
       </main>
+      
      <footer>
      </footer>
     </div>
