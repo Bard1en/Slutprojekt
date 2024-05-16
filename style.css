@@ -70,10 +70,6 @@ nav li{/*li i nav ändras*/
     justify-content: stretch;/*Stretchar ut li*/
 }
 
-header li{  
-    display :grid;
-}
-
 nav > ul  { /*ändrar länkar under nav*/
     display:grid;
     text-align:center;
@@ -132,10 +128,6 @@ nav li a:hover{/*När man håller över a i li i nav */
     transition: 500ms;/*Gör så att det tar lite tid innan stilarna man valt ändras*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
     border-radius:6px;
-}
-
-#instrument header li a{
-    font-size:55px;
 }
 
 #instrument main{
