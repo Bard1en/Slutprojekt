@@ -10,7 +10,7 @@ body{
     width:100%;/*Sätter så att wrapperna har en bredd på 100%*/
     height:100%;/*Sätter så att wrapperna har en höjd på 100%*/
     margin: 0 auto; 
-    grid-template-rows: 100px auto 80px; /*skapar 4 st rader för gridden med olika storlekar*/
+    grid-template-rows: 100px 100px auto 80px; /*skapar 4 st rader för gridden med olika storlekar*/
     grid-template-areas: /*anger områden i grid layout*/
     "header"
     "nav"
@@ -50,7 +50,8 @@ header{
 }
 
 h1{
-    display:none;/*Gör så att h1 inte visas*/
+    font-size: 50px;
+    text-align: center;
 }
 
 h2,h3{
@@ -195,13 +196,13 @@ nav li a:hover{/*När man håller över a i li i nav */
 }
 
 strong{
-    font-size:1.5em; /*Gör så att texten får en storlek på 1.5 em vilket är 1.5 större än den vanliga text storlekn i dokumentet*/
+    font-size:1.5em; /*Gör så att texten får en storlek på 1.5 em vilket är 1.5 större än den vanliga text storleken i dokumentet*/
 }
 
 .knappformular{
     display: flex;
-    justify-content: center;/*Centerar allt i flex*/
-    align-items:center; /*Centerar*/
+    justify-content: center;/*Centrerar allt i flex*/
+    align-items:center; /*Centrerar*/
     border:1px solid rgba(0, 0, 0, 1);
     border-radius:20px; 
 }
@@ -238,7 +239,6 @@ input[type=submit]{
 fieldset{
     border-radius:6px;
     width:80%;
-    display:block;/*Gör så att fieldset visas som ett block och var det enda sättet för mig att göra så att det kunde centreras snabbt och lätt*/
     margin:0 auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
 }
@@ -275,30 +275,12 @@ audio{
     border-radius:25px;
 }
 
-td audio{
-    float:right; /*Gör så att det flyttas till höger, testade med annat men detta var det enda som funkade med audio och sökte även upp sätt man kunde göra det på och detta verkade smidigast*/
-}
-
 .tacksida{
     font-size:50px;
 }
 
-a:link{ /*Hur li ser ut innan den har varit besökt*/
+a:link,a:visited,a:focus,a:hover,a:active{ /*LoVe Focus HAte*/
     color:inherit;
 }
 
-a:visited{ /*Hur li ser ut efter den varit besökt*/
-    color:inherit;
-}
 
-a:focus{/*När man trycker eller håller över den med tangentbordet*/
-    color:inherit;
-}
-
-a:hover{ /*När man håller över li med musen*/
-    color:inherit;
-} 
-
-a:active{/*När man trycker ner mus knappen*/
-    color:inherit;
-}
